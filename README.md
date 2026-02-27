@@ -1,7 +1,7 @@
-# CS1_SistemaGestionAlumnos_EquipoAlfa 
+# CS3_TallerTodoPantallas_EquipoChihuahua
 **Nombre de la Materia:** CS3
 **Nombre del Proyecto:** Todo-Pantallas
-**Equipo:** Equipo Alfa 
+**Equipo:** Equipo Chihuahua 
 **Integrantes:** 
 * Juan Camilo Roa Cabrera
 * Laura Quintero Correa
