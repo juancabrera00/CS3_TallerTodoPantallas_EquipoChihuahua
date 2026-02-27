@@ -6,7 +6,7 @@
 **Integrantes:**
 * Mateo Valencia Ardila
 * Laura Quintero Correa
-* Juan Camilo Roa Cabrera
+* Juan Camilo Cabrera Roa
 
 **Descripción:**
 Este proyecto implementa una aplicación de lista de tareas (To-Do List) interactiva utilizando HTML, CSS y JavaScript puro. Permite agregar tareas, marcarlas como completadas y eliminarlas, manejando validaciones y actualización dinámica del DOM.
