@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>My Tasks</h1>
+        <p id="subtitle">Add something to get started</p>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Write a new task...">
+            <button id="add-btn">Add</button>
+        </div>
+
+        <div id="empty-state" class="empty-box">
+            No tasks yet
+        </div>
+
+        <ul id="task-list"></ul>
+
+        <div id="task-counter" class="hidden">
+            <span id="completed-count">0</span> of <span id="total-count">0</span> completed
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
