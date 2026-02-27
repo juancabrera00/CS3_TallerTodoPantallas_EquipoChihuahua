@@ -19,4 +19,5 @@ Este proyecto implementa una aplicación de lista de tareas (To-Do List) interac
 
 **Instrucciones de compilación y ejecución:**
 1. Clonar el repositorio.
-2. Abrir el archivo `index.html` directamente en cualquier navegador web moderno.
+2. Usar rama de entrega release/v1
+3. Abrir el archivo `index.html` directamente en cualquier navegador web moderno.
