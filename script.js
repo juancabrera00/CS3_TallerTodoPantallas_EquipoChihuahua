@@ -27,3 +27,50 @@ function updateUI() {
    contadorCompletadas.textContent = tareasCompletadas;
    contadorTotal.textContent = totalTareas;
 }
+
+// Función para agregar tarea
+agregarBoton.addEventListener('click', () => {
+   const textoTarea = entradaTarea.value.trim();
+   if (textoTarea === "") return;
+   totalTareas++;
+   // Crear el elemento <li>
+   const elementoLista = document.createElement('li');
+   const texto = document.createElement('span');
+   texto.textContent = textoTarea;
+   // Crear el botón de eliminar
+   const botonEliminar = document.createElement('button');
+   botonEliminar.textContent = '✕';
+   botonEliminar.classList.add('delete-btn');
+   // Evento para marcar/desmarcar como completada
+   elementoLista.addEventListener('click', (e) => {
+       // Evitar que hacer clic en la "X" marque la tarea como completada
+       if (e.target !== botonEliminar) {
+           elementoLista.classList.toggle('completed');
+           if (elementoLista.classList.contains('completed')) {
+               tareasCompletadas++;
+           } else {
+               tareasCompletadas--;
+           }
+           updateUI();
+       }
+   });
+
+   // Evento para eliminar la tarea de la lista
+   botonEliminar.addEventListener('click', () => {
+       listaTareas.removeChild(elementoLista);
+       totalTareas--;
+       if (elementoLista.classList.contains('completed')) {
+           tareasCompletadas--;
+       }
+       updateUI();
+   });
+
+   // Ensamblar y agregar a HTML
+   elementoLista.appendChild(texto);
+   elementoLista.appendChild(botonEliminar);
+   listaTareas.appendChild(elementoLista);
+   
+   // Vaciar el input después de agregar
+   entradaTarea.value = "";
+   updateUI();
+});
